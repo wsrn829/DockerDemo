@@ -58,5 +58,9 @@ docker pull postgres
 - When you run "npm install," it looks for the dependencies in the package.json file and installs them in a folder called "node_modules", which contains all the packages and modules required by the project.
 3. "touch index.js" creates an index.js file.
 4. The file which contains all the instructions for how to run the app is called Dockerfile.
+5. Dockerfiles vs Docker-compose.yml:
+  - Dockerfile.dev and Dockerfile.prod are specific to Docker image building, with the former being tailored for development environments and the latter for production.
+  - docker-compose.yml is a broader configuration file used to define and run multi-container Docker applications, including both development and production environments.
+  
 
 
