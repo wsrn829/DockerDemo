@@ -58,9 +58,43 @@ docker pull postgres
 - When you run "npm install," it looks for the dependencies in the package.json file and installs them in a folder called "node_modules", which contains all the packages and modules required by the project.
 3. "touch index.js" creates an index.js file.
 4. The file which contains all the instructions for how to run the app is called Dockerfile.
-5. Dockerfiles vs Docker-compose.yml:
+5. Dockerfiles vs Docker-compose.yaml:
   - Dockerfile.dev and Dockerfile.prod are specific to Docker image building, with the former being tailored for development environments and the latter for production.
-  - docker-compose.yml is a broader configuration file used to define and run multi-container Docker applications, including both development and production environments.
-  
+  - docker-compose.yaml is a broader configuration file used to define and run multi-container Docker applications, including both development and production environments.
+6. Dockerfile sample structure:
+- FROM
+- WORKDIR
+- COPY
+- EXPOSE
+- RUN
+- CMD
+7. Create the image: docker build -t api .
+8. Run the container from the image: docker run -d -p 8080:8080 api
+9. docker container ls (all running containers)
+10. npm create vite@latest
 
+-------------------------------
 
+The coolest thing --- docker-compose.yaml:
+- The orchestrator of our app, which runs everything in one go.
+- tabbing and spacing is very important, otherwise it'll yell at you.
+<br />
+Sample structure:
+- version:
+- services:
+  - db:
+    - image:
+    - environment:
+    - ports:
+    - volumes:
+  - server:
+    - build:
+    - ports:
+  - frontend:
+    - build:
+    - ports:
+<br />
+Go to root directoty:
+```
+docker-compose up
+```
