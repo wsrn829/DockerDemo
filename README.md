@@ -33,4 +33,20 @@ docker --version
 docker info
 ```
 ```
+docker image ls
+```
+```
+docker container ls --all  or  docker ps -a   (all containers)
+```
+```
+docker container ls  (currently-running containers)
+```
+
+------------------------
+
+### Go to Docker Hub and use an existing Postgres image instead of creating one locally.
+```
+docker pull postgres
+```
+
 
