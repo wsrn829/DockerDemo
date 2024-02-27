@@ -79,6 +79,7 @@ The coolest thing --- docker-compose.yaml:
 - The orchestrator of our app, which runs everything in one go.
 - tabbing and spacing is very important, otherwise it'll yell at you.
 <br />
+
 Sample structure:
 - version:
 - services:
@@ -93,7 +94,7 @@ Sample structure:
   - frontend:
     - build:
     - ports:
-<br />
+
 Go to root directoty:
 ```
 docker-compose up
