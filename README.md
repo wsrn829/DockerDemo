@@ -36,7 +36,7 @@ docker info
 docker image ls
 ```
 ```
-docker container ls --all  or  docker ps -a   (all containers)
+docker container ls --all  or  docker ps -a   (all containers) 
 ```
 ```
 docker container ls  (currently-running containers)
@@ -48,5 +48,15 @@ docker container ls  (currently-running containers)
 ```
 docker pull postgres
 ```
+-----------------------
+
+1. "npm init":
+- initializes a new Node.js project
+- creates a package.json file, which contains metadata about the project (name, version, and dependencies)
+2. "npm install":
+- installs dependencies listed in the package.json file
+- When you run "npm install," it looks for the dependencies in the package.json file and installs them in a folder called "node_modules", which contains all the packages and modules required by the project.
+3. "touch index.js" creates an index.js file.
+4. The file which contains all the instructions for how to run the app is called Dockerfile.
 
 
