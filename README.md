@@ -1,5 +1,7 @@
 ## Docker, along with CI/CD and Redux, is one of the most important skills I must learn in addition to everything else I have learned.
 
+This is a full-stack node-express-react-postgres application, made with Docker Compose (version 3.1).
+
 ------------------------------
 
 1. Docker is a tool that helps us set up our programming environment quickly.
@@ -99,3 +101,4 @@ Go to root directoty:
 ```
 docker-compose up
 ```
+I would opt for compose, especially in production-level applications.
