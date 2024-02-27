@@ -10,8 +10,27 @@
 6. Docker containers can be likened to individual instances of our application.
 7. The Dockerfile or our image acts as a set of technical specifications outlining the requirements and instructions for our app.
 8. One of the key benefits of Docker is its use of containerization, a process that
-   - effectively isolates our application
-   - easy to deploy
-   - compatible across different platforms
-   - can be used in the CI/CD process.
-9. 
+- effectively isolates our application
+- easy to deploy
+- compatible across different platforms
+- can be used in the CI/CD process.
+9. Docker desktop install:
+- Containers (logs, integrated terminal)
+- Images
+  - created from our Dockerfile
+  - base images from Docker Hub
+- Volumes
+10. Developers all over the world can pull down these "global images" and use them to create containers.
+
+---------------------------
+
+### Some Docker-related terminal commands
+
+```
+docker --version
+```
+```
+docker info
+```
+```
+
